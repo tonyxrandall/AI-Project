@@ -15,6 +15,15 @@ header {
     text-align: center;
 }
 
+/* Style for the image under the header */
+#header-image {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 800px; /* Maximum width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 20px auto; /* Center the image with automatic margins */
+}
+
 article {
     margin: 20px;
     padding: 20px;
