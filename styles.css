@@ -2,27 +2,23 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #333;
-    background-image: url('futuristic_background.jpg');
+    color: #00274C; /* Michigan Blue */
+    background-image: url('futuristic_background.jpg'); /* Futuristic Background */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 .navbar {
-    background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent */
+    background-color: #00274C; /* Michigan Blue */
 }
 
-.nav-link {
-    color: #fff !important;
-}
-
-.navbar-brand {
-    color: #fff !important;
+.nav-link, .navbar-brand {
+    color: #FFCB05 !important; /* Michigan Maize */
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -30,17 +26,17 @@ body {
 }
 
 h2 {
-    color: #007bff;
+    color: #00274C; /* Michigan Blue */
     margin-bottom: 15px;
 }
 
 h2 a {
     text-decoration: none;
-    color: #007bff;
+    color: #00274C; /* Michigan Blue */
 }
 
 h2 a:hover {
-    color: #0056b3;
+    color: #FFCB05; /* Michigan Maize */
 }
 
 img {
@@ -55,4 +51,3 @@ img {
         display: block;
     }
 }
-
