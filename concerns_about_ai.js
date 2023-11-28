@@ -13,5 +13,5 @@ document.addEventListener('DOMContentLoaded', function() {
             top: 800, 
             behavior: 'smooth' 
         });
-    }, 2000); // 2000 milliseconds (2 seconds) to match the fade-in duration
+    }, 6000); // 2000 milliseconds (2 seconds) to match the fade-in duration
 });
