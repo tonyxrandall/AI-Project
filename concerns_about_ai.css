@@ -6,6 +6,8 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    opacity: 0; /* Start with the body invisible */
+    transition: opacity 2s ease-in-out; /* Transition for the fade-in effect */
 }
 
 header {
