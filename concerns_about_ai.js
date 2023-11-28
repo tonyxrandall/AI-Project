@@ -6,5 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
         headerImage.style.opacity = 1;
     }
 
-    // Add any other JavaScript functionalities as needed
+    // Scroll down after the image has faded in
+    setTimeout(function() {
+        // Adjust the '800' to the pixel value you want to scroll to, or use a dynamic value
+        window.scrollTo({
+            top: 800, 
+            behavior: 'smooth' 
+        });
+    }, 2000); // 2000 milliseconds (2 seconds) to match the fade-in duration
 });
