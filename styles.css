@@ -25,6 +25,34 @@ body {
     margin-top: 20px;
 }
 
+.collapsible-trigger {
+    background-color: #00274C; /* Michigan Blue */
+    color: #FFCB05; /* Michigan Maize */
+    padding: 10px;
+    margin: 5px 0;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible-trigger:hover {
+    background-color: #FFCB05; /* Michigan Maize */
+    color: #00274C; /* Michigan Blue */
+}
+
+.collapsible-trigger.open {
+    background-color: #FFCB05; /* Michigan Maize */
+    color: #00274C; /* Michigan Blue */
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    padding: 0 10px;
+}
+
 h2 {
     color: #00274C; /* Michigan Blue */
     margin-bottom: 15px;
@@ -51,3 +79,4 @@ img {
         display: block;
     }
 }
+
