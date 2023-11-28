@@ -24,8 +24,6 @@ header {
     height: auto; /* Maintain aspect ratio */
     display: block;
     margin: 20px auto; /* Center the image with automatic margins */
-    opacity: 0; /* Initial state for fade-in effect */
-    transition: opacity 6s ease-in; /* Transition for the fade-in effect */
 }
 
 article {
