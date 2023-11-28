@@ -1,7 +1,10 @@
 // concerns_about_ai.js
 
-// Example of a simple JavaScript functionality
 document.addEventListener('DOMContentLoaded', function() {
-    const currentDate = document.querySelector('time');
-    currentDate.style.fontWeight = 'bold';
+    const headerImage = document.getElementById('header-image');
+    if (headerImage) {
+        headerImage.style.opacity = 1;
+    }
+
+    // Add any other JavaScript functionalities as needed
 });
