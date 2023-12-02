@@ -1,7 +1,9 @@
+/* concerns_about_ai.css */
+
 body {
-    font-family: "Times New Roman", Times, serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* UMich often uses Helvetica */
+    color: #00274C; /* UMich Blue */
+    background-color: #FFF;
     margin: 0;
     padding: 0;
 }
@@ -13,24 +15,27 @@ body {
 }
 
 .article-title {
+    color: #FFCB05; /* UMich Maize */
     font-size: 28px;
     margin-bottom: 20px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+/* Main Article Content */
+.col-md-8 {
+    float: left;
 }
 
 /* Sidebar Styles */
 .col-md-4 {
+    float: right;
     margin-top: 40px;
 }
 
 .sidebar-item {
+    background-color: #f4f4f4; /* Light background for sidebar items */
+    padding: 10px;
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
+    border-radius: 5px;
 }
 
 .sidebar-item img {
@@ -40,23 +45,23 @@ img {
 }
 
 .sidebar-item a {
-    color: #00274C;
+    color: #00274C; /* UMich Blue */
     text-decoration: none;
 }
 
 .sidebar-item a:hover {
+    color: #FFCB05; /* UMich Maize */
     text-decoration: underline;
 }
 
 /* Responsive Layout */
 @media (max-width: 768px) {
-    .col-md-4 {
-        margin-top: 20px;
-    }
-    .sidebar-item {
-        margin-bottom: 15px;
+    .col-md-8, .col-md-4 {
+        float: none;
+        width: 100%;
     }
     .sidebar-item img {
         width: 60px;
     }
 }
+
