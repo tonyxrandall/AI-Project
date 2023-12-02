@@ -1,0 +1,62 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.article-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sidebar Styles */
+.col-md-4 {
+    margin-top: 40px;
+}
+
+.sidebar-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-item img {
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.sidebar-item a {
+    color: #00274C;
+    text-decoration: none;
+}
+
+.sidebar-item a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .col-md-4 {
+        margin-top: 20px;
+    }
+    .sidebar-item {
+        margin-bottom: 15px;
+    }
+    .sidebar-item img {
+        width: 60px;
+    }
+}
