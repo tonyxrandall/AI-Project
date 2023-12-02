@@ -1,6 +1,7 @@
+
+
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* UMich often uses Helvetica */
-    color: #00274C; /* UMich Blue */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #FFF;
     margin: 0;
     padding: 0;
@@ -10,10 +11,12 @@ body {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
+    background-color: #FFCB05; /* UMich Maize background */
+    color: #00274C; /* UMich Blue text */
 }
 
 .article-title {
-    color: #FFCB05; /* UMich Maize */
+    color: #00274C; /* UMich Blue */
     font-size: 28px;
     margin-bottom: 20px;
 }
@@ -21,16 +24,20 @@ body {
 /* Main Article Content */
 .col-md-8 {
     float: left;
+    background-color: #FFF; /* White background for contrast */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 /* Sidebar Styles */
 .col-md-4 {
     float: right;
-    margin-top: 40px;
+    padding-top: 0; /* Aligns sidebar with the article start */
 }
 
 .sidebar-item {
-    background-color: #f4f4f4; /* Light background for sidebar items */
+    background-color: #E9F1FA; /* Light blue for sidebar items */
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -45,6 +52,7 @@ body {
 .sidebar-item a {
     color: #00274C; /* UMich Blue */
     text-decoration: none;
+    font-weight: bold;
 }
 
 .sidebar-item a:hover {
@@ -62,4 +70,3 @@ body {
         width: 60px;
     }
 }
-
