@@ -11,9 +11,8 @@ body {
 .container {
     max-width: 1200px;
     margin: 20px auto;
-    display: grid;
-    grid-template-columns: 3fr 1fr; /* Main content and sidebar */
-    grid-gap: 20px;
+    display: flex; /* Changed to flex for better horizontal alignment */
+    flex-wrap: wrap;
     background-color: #ffffff;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -29,6 +28,7 @@ body {
 /* Main Article Content Styling */
 .col-md-8 {
     background-color: #ffffff; /* White background for the article */
+    width: 75%; /* Adjusted width for main content */
 }
 
 /* Sidebar Styling */
@@ -36,6 +36,7 @@ body {
     background-color: #f8f8f8; /* Slightly off-white for the sidebar */
     padding: 15px;
     border-radius: 8px;
+    width: 25%; /* Adjusted width for sidebar */
 }
 
 .sidebar-item {
@@ -43,7 +44,7 @@ body {
 }
 
 .sidebar-item img {
-    width: 100%;
+    width: 80%; /* Adjusted image width */
     height: auto;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -63,11 +64,11 @@ body {
 /* Responsive Layout */
 @media (max-width: 992px) {
     .container {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 
-    .col-md-4 {
-        margin-top: 20px;
+    .col-md-8, .col-md-4 {
+        width: 100%;
     }
 }
 
