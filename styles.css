@@ -2,54 +2,38 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #00274C; /* Michigan Blue */
-    background-image: url('futuristic_background.jpg'); /* Futuristic Background */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.navbar {
-    background-color: #00274C; /* Michigan Blue */
-}
-
-.nav-link, .navbar-brand {
-    color: #FFCB05 !important; /* Michigan Maize */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
 }
 
-h2 {
-    color: #00274C; /* Michigan Blue */
+.news-item {
+    display: flex;
+    align-items: center;
     margin-bottom: 15px;
 }
 
-h2 a {
+.news-item h2 {
+    margin-left: 10px;
+}
+
+.news-image {
+    width: 100px;
+    height: auto;
+}
+
+.news-item h2 a {
+    color: #00274C;
     text-decoration: none;
-    color: #00274C; /* Michigan Blue */
 }
 
-h2 a:hover {
-    color: #FFCB05; /* Michigan Maize */
+.news-item h2 a:hover {
+    text-decoration: underline;
 }
-
-img {
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-    img {
-        float: none;
-        margin: auto;
-        display: block;
-    }
-}
-
 
