@@ -1,8 +1,9 @@
-
+/* concerns_about_ai.css */
 
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #FFF;
+    color: #00274C; /* UMich Blue */
     margin: 0;
     padding: 0;
 }
@@ -11,8 +12,9 @@ body {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
-    background-color: #FFCB05; /* UMich Maize background */
-    color: #00274C; /* UMich Blue text */
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFCB05; /* UMich Maize */
 }
 
 .article-title {
@@ -23,17 +25,20 @@ body {
 
 /* Main Article Content */
 .col-md-8 {
-    float: left;
-    background-color: #FFF; /* White background for contrast */
+    flex: 0 0 66.66667%; /* 2/3 of the container width */
+    max-width: 66.66667%;
     padding: 15px;
+    background-color: #FFF; /* White background for contrast */
     margin-bottom: 20px;
     border-radius: 5px;
 }
 
 /* Sidebar Styles */
 .col-md-4 {
-    float: right;
-    padding-top: 0; /* Aligns sidebar with the article start */
+    flex: 0 0 33.33333%; /* 1/3 of the container width */
+    max-width: 33.33333%;
+    padding-top: 0;
+    margin-top: 40px;
 }
 
 .sidebar-item {
@@ -61,12 +66,9 @@ body {
 }
 
 /* Responsive Layout */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .col-md-8, .col-md-4 {
-        float: none;
-        width: 100%;
-    }
-    .sidebar-item img {
-        width: 60px;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
