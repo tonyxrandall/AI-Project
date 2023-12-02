@@ -4,7 +4,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-image: url('landing_background.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Fixed background */
+    color: #333;
 }
 
 .container {
