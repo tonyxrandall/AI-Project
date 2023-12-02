@@ -1,74 +1,73 @@
 /* concerns_about_ai.css */
 
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #FFF;
-    color: #00274C; /* UMich Blue */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
     margin: 0;
     padding: 0;
 }
 
 .container {
     max-width: 1200px;
-    margin: auto;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Main content and sidebar */
+    grid-gap: 20px;
+    background-color: #ffffff;
     padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #FFCB05; /* UMich Maize */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .article-title {
-    color: #00274C; /* UMich Blue */
-    font-size: 28px;
+    font-size: 32px;
+    color: #0056b3; /* A deep blue for titles */
     margin-bottom: 20px;
 }
 
-/* Main Article Content */
+/* Main Article Content Styling */
 .col-md-8 {
-    flex: 0 0 66.66667%; /* 2/3 of the container width */
-    max-width: 66.66667%;
-    padding: 15px;
-    background-color: #FFF; /* White background for contrast */
-    margin-bottom: 20px;
-    border-radius: 5px;
+    background-color: #ffffff; /* White background for the article */
 }
 
-/* Sidebar Styles */
+/* Sidebar Styling */
 .col-md-4 {
-    flex: 0 0 33.33333%; /* 1/3 of the container width */
-    max-width: 33.33333%;
-    padding-top: 0;
-    margin-top: 40px;
+    background-color: #f8f8f8; /* Slightly off-white for the sidebar */
+    padding: 15px;
+    border-radius: 8px;
 }
 
 .sidebar-item {
-    background-color: #E9F1FA; /* Light blue for sidebar items */
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 .sidebar-item img {
-    width: 80px;
+    width: 100%;
     height: auto;
-    margin-right: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-item a {
-    color: #00274C; /* UMich Blue */
+    color: #007bff; /* Bright blue for sidebar links */
     text-decoration: none;
-    font-weight: bold;
+    display: block;
+    margin-top: 8px;
 }
 
 .sidebar-item a:hover {
-    color: #FFCB05; /* UMich Maize */
     text-decoration: underline;
 }
 
 /* Responsive Layout */
 @media (max-width: 992px) {
-    .col-md-8, .col-md-4 {
-        flex: 0 0 100%;
-        max-width: 100%;
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .col-md-4 {
+        margin-top: 20px;
     }
 }
+
