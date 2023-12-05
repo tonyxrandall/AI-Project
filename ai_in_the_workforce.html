@@ -26,11 +26,40 @@
             height: auto;
             margin-bottom: 20px;
         }
+        .footer {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px; /* Height of the footer */
+}
+
+.sticky-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00274C; /* UofM Blue */
+    color: white;
+    text-align: center;
+    height: 60px; /* Adjust as needed */
+    line-height: 60px; /* Same as height for vertical centering */
+}
+
+.footer-links a {
+    color: #FFCB05; /* UofM Maize */
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">UofM News</a>
+        <a class="navbar-brand" href="#">AI in the Workplace</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -51,7 +80,6 @@
                 <img src="ai_in_the_workplace.jpg" alt="AI and Workforce" class="main-image">
                 <section id="section1">
                     <p> The rapid advancement of artificial intelligence (AI) has ignited a myriad of discussions surrounding its potential impact on the workforce. As businesses integrate AI into their operations, the implications for workers are complex. Drawing insights from various perspectives, we will explore the multifaceted landscape of AI’s impact on the job force and consider the potential shifts in career dynamics. </p>
-]
                     <h2>The Dichotomy of AI Making Labor Easier and Increasing Workload:</h2>
                     <p>AI has been proposed to be the ultimate productivity tool, which might mean that workers might face higher expectations and heavier workloads due to the accelerated efficiency brought about by AI. The concern raised here revolves around whether increased productivity necessarily translates to a more meaningful and satisfying work experience. The comparison to platforms such as Slack, which initially aimed to streamline communication and increase productivity but rather end up being additional layers of responsibilities, raise concerns about the potential stress and diminished job satisfaction that could result from AI integration.</p>
                 </section>
@@ -67,9 +95,13 @@
                     <h2>Preparing for the Future:</h2>
                     <p>As students prepare to enter this unprecedented new work landscape, it becomes imperative for workers to cultivate a blend of technical skills and uniquely human attributes. The intersection of AI and human capabilities is likely to redefine career paths, emphasizing adaptability, continuous learning, and a balance between efficiency-driven AI and the irreplaceable qualities of human interaction. The arrival of AI presents both challenges and opportunities for the workforce. AI’s impact on the workplace is inevitable, but strategic planning, education, and an understanding of the evolving landscape will allow individuals to succeed in this new technological era.</p>
                 </section>
-                <footer class="footer">
-                    <p><a href="about_us.html">About Us</a> | <a href="how_this_was_created.html">How This Was Created</a></p>
-                </footer>
+                <footer class="sticky-footer">
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="how_this_was_made.html">How this Website was Made</a>
+    </div>
+</footer>
              </div>
             <div class="col-md-4">
                 <h3>Related Articles</h3>
