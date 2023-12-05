@@ -51,6 +51,35 @@
         h1, h2 {
             color: #00274C; /* UofM Blue */
         }
+         .footer {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px; /* Height of the footer */
+}
+
+.sticky-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00274C; /* UofM Blue */
+    color: white;
+    text-align: center;
+    height: 60px; /* Adjust as needed */
+    line-height: 60px; /* Same as height for vertical centering */
+}
+
+.footer-links a {
+    color: #FFCB05; /* UofM Maize */
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
     </style>
 </head>
 <body>
@@ -80,8 +109,8 @@
                 </div>
             </div>
             <div class="article">
-                <img src="Concerns_ai.jpg" alt="Article Image" style="width:100%; height:auto;">
                 <h1>Navigating the Uncharted Waters of Generative AI: A Closer Look at Concerns and Considerations</h1>
+                <img src="Concerns_ai.jpg" alt="Article Image" style="width:100%; height:auto;">
                 <p>Generative AI is a rapidly advancing field that holds great promise of innovation and efficiency. However, as with any technological breakthrough, it brings a myriad of concerns that demand careful examination. In the article, we dive into some of the common concerns regarding the use of generative AI, exploring its potential impact on the workforce, economy, and society at large.</p>
                 <h2>Impact on the Workforce: Job Loss and Economic Implications</h2>
                 <p>Generative AI has the power to streamline tasks and automate processes, leading to increased efficiency. However, this efficiency comes at a cost to certain job sectors. Routine and repetitive tasks are susceptible to automation, which raises concerns about job displacement in industries. Specifically, there is a concern for how white collar jobs requiring a college degree, such as software engineering or graphic design, will be impacted. As certain jobs become automated, the question arises: who will bear the brunt of these technological advancements? The ripple effect of widespread job loss could have profound economic consequences, affecting consumer spending, income distribution, and the overall stability of labor markets. </p>
@@ -93,6 +122,13 @@
                 <h2>Conclusion</h2>
                 <p>Generative AI holds immense potential, but its widespread adoption necessitates a careful consideration of the associated challenges. As we venture into a future where AI plays an increasingly prominent role, it is imperative to address concerns surrounding job displacement, economic implications, ethical considerations, and the potential for AI to exacerbate societal inequalities. Through responsible development, thoughtful regulation, and a commitment to inclusivity, we can harness the benefits of generative AI while mitigating its potential risks. </p>
             </div>
+            <footer class="sticky-footer">
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="how_this_was_made.html">How this Website was Made</a>
+    </div>
+</footer>
         </div>
     </div>
 
