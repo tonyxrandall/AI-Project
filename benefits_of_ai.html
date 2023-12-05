@@ -45,14 +45,39 @@
             color: #FFCB05;
         }
         .footer {
-            padding: 10px 0;
-            text-align: center;
-        }
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px; /* Height of the footer */
+}
+
+.sticky-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00274C; /* UofM Blue */
+    color: white;
+    text-align: center;
+    height: 60px; /* Adjust as needed */
+    line-height: 60px; /* Same as height for vertical centering */
+}
+
+.footer-links a {
+    color: #FFCB05; /* UofM Maize */
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">UofM News</a>
+        <a class="navbar-brand" href="#">Benefits of AI Usage</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -87,6 +112,13 @@
                     <h2>Conclusion</h2>
                     <p>As generative AI continues to become more prominent in society, the potential benefits for the job force and education are vast. The efficiencies gained in decision-making, workflow processes, and personalized experiences will undoubtedly redefine how businesses operate. Simultaneously, the educational landscape will undergo a transformation, with personalized learning and interactive content becoming the new norm. The integration of generative AI is not just a technological advancement, it is a catalyst for progress, pushing the boundaries of what is possible in both professional and educational realms. </p>
                 </section>
+                <footer class="sticky-footer">
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="how_this_was_made.html">How this Website was Made</a>
+    </div>
+    </footer>
             </div>
             <div class="col-md-4 related-articles">
                 <h3>Related Articles</h3>
@@ -114,10 +146,7 @@
         </div>
     </div>
 
-    <div class="footer">
-        <p>&copy; 2023 University of Michigan News</p>
-    </div>
-
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
