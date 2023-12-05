@@ -63,11 +63,33 @@
 }
 
 .footer {
-    background-color: #333;
-    color: #fff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px; /* Height of the footer */
+}
+
+.sticky-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00274C; /* UofM Blue */
+    color: white;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    height: 60px; /* Adjust as needed */
+    line-height: 60px; /* Same as height for vertical centering */
+}
+
+.footer-links a {
+    color: #FFCB05; /* UofM Maize */
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
 .article-preview {
     background-color: white;
@@ -166,8 +188,11 @@
         <!-- Additional articles will follow in a similar format -->
     </main>
 
-    <footer class="footer">
-        <p>&copy; 2023 University of Michigan News</p>
+    <footer class="sticky-footer">
+    <div class="footer-links">
+        <a href="about_us.html">About Us</a>
+        <a href="how_was_made.html">How this website was Made</a>
+    </div>
     </footer>
 
     <!-- Bootstrap JS -->
@@ -175,4 +200,5 @@
 </body>
 </html>
 </html>
+
 
