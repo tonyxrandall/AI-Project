@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How This Website Was Made - University of Michigan News</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #00274C; /* UofM Blue */
+    color: #FFCB05; /* UofM Maize */
+    padding: 20px;
+    text-align: center;
+}
+
+.main-content {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    color: #00274C; /* UofM Blue */
+}
+
+.section p, .section a {
+    color: #333;
+    line-height: 1.6;
+}
+
+.section a {
+    color: #00274C;
+    text-decoration: none;
+}
+
+.section a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+.sticky-footer {
+    width: 100%;
+    background-color: #00274C; /* UofM Blue */
+    color: white;
+    text-align: center;
+    height: 60px; /* Adjust as needed */
+    line-height: 60px; /* Same as height for vertical centering */
+}
+
+.footer-links a {
+    color: #FFCB05; /* UofM Maize */
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>How This Website Was Made</h1>
+    </header>
+
+    <main class="main-content">
+        <section class="section">
+            <h2>Philosophy</h2>
+            <p>This website's creation philosophy was to code an article-styled website with as little prior knowledge as possible, solely using generative AI, to educate individuals about AI and test the current limits of generative AI. </p>
+        </section>
+
+        <section class="section">
+            <h2>Sources</h2>
+            <p>This website was made using <a href="https://github.com">Github Pages</a> to host the website; <a href="https://openai.com/gpt-4/">GPT 4.0</a> to code the website; <a href="https://www.sublimetext.com/">Sublime Text</a> to test the code; and <a href="https://openai.com/dall-e-3/">DALL-E 3.0</a> and <a href="https://dream.io">DREAM</a> to generate the website's images.</p>
+        </section>
+
+        <section class="section">
+            <h2>Explanation</h2>
+            <p>Before this project started, research was done pertaining to the uses of CSS and HTML for creating websites—not on how to write CSS, but on how it works. As GPT 4.0 elaborates, "HTML is used to structure the content of a web page, such as text, images, and links, forming the skeleton of the website. CSS is employed to style this content, allowing for customization of colors, fonts, layouts, and more, essentially defining the website's appearance. Together, HTML provides the structure, while CSS enhances the visual presentation, creating a cohesive and visually appealing website". Perhaps the most important aspect of creating the website was learning how to link all the HTML pages together and the different ways HTML and CSS can be used.</p>
+            <p>
+            Knowledge from a singular source 
+            <a href="https://themeisle.com/blog/how-to-use-chatgpt-to-build-a-website/#gref" target="_blank">about writing websites with GPT 4.0</a> 
+            was applied to create this website. This prompt was used to prime GPT 4.0 from that source: 
+            "I would like you to act as a frontend web developer. For the project, you'll code a new website using these tools: HTML, Bootstrap framework using the CDN for CSS and JavaScript. The website should be mobile-friendly and responsive. It should also include the most recent version of Twitter Bootstrap CSS classes in the site structure for layout and style. When it's all done, there should be a single HTML file. You should also include a navigation menu with internal links to the headings within the page content. Do not provide explanations for any of the code you write. Do you understand everything? Please reply with a yes or no answer if you understand all the requirements".</p>
+            <p> After using the above prompt, all it took was prompt engineering, written content, and keeping in mind the capabilities of HTML/CSS to create the files for this website. Also, the ability to copy/paste code into the right areas of an HTML/CSS file. There was significant prompt testing to produce web pages appropriate for this website; each new webpage was better than the last. One can directly tell GPT 4.0 which aspects of the code to edit. GPT 4.0 usually only outputs the headers of the HTML, requiring prompters to fill in the paragraphs. From there, each HTML/CSS file was uploaded to GitHub. Below are some examples of the prompts submitted without the content, as well as the GitHub repository for this website. </p>
+
+
+        </section>
+
+        <section class="section">
+            <h2>Prompt #1</h2>
+            <p>Create a new html and css file for a news article formatted page with a University of Michigan style . Directly above  the article will be links to other articles html pages with small images  with them the articles are titled AI in Education, AI in the Workplace, When is AI Usage Appropriate?,  Benefits of AI Usage, and Concerns about AI Usage. Also include additional unique design aspects to the css and html code  to make the page seem more advanced. The article content will be:………</p>
+        </section>
+        <section class="section">
+            <h2>Prompt #2</h2>
+            <p>I like the css you produced can you redo it to add more detail to the html and include the Related Articles section talk about earlier: AI in Education, AI in the Workplace, When is AI Usage Appropriate?,  Benefits of AI Usage, and Concerns about AI Usage. Also include additional unique design aspects to the css and html code  to make the page seem more advanced. The article content will be:………</p>
+        </section>
+        <section class="section">
+            <h2>Prompt #3</h2>
+            <p>I like the css you produced can you redo it to add more detail to the html and include the Related Articles section talk about earlier: AI in Education, AI in the Workplace, When is AI Usage Appropriate?,  Benefits of AI Usage, and Concerns about AI Usage. Also include additional unique design aspects to the css and html code  to make the page seem more advanced. The article content will be:………</p>
+        </section>
+        <section class="section">
+            <h2>Conclusion</h2>
+            <p>Although this website's design quality is not up to the standards of platforms like 
+            <a href="https://www.wix.com" target="_blank">WIX</a> or 
+            <a href="https://www.canva.com" target="_blank">Canva</a>, it is a testament to the growing capabilities of generative AI and its uncanny ability to write code for individuals that hardly know how. A more knowledgeable website designer could push GPT 4.0 farther than I could. Only time will delay generative AI from reaching the point where it can surpass website design platforms and the creators behind them. </p>
+
+        </section>
+
+
+
+        <!-- Additional sections for each prompt and conclusion -->
+
+    </main>
+
+    <footer class="sticky-footer">
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        
+    </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+</body>
+</html>
