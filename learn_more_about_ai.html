@@ -68,12 +68,34 @@
             line-height: 1.6;
         }
         .footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px; /* Height of the footer */
+}
+
+.sticky-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00274C; /* UofM Blue */
+    color: white;
+    text-align: center;
+    height: 60px; /* Adjust as needed */
+    line-height: 60px; /* Same as height for vertical centering */
+}
+
+.footer-links a {
+    color: #FFCB05; /* UofM Maize */
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
         @media (max-width: 768px) {
             .article-links-container {
                 padding: 10px;
@@ -109,8 +131,8 @@
                 <a href="ai_in_the_workforce.html">AI in the Workplace</a>
             </div>
             <div class="article-link">
-                <img src="when_is_ai_appropriate.jpg" alt="When is AI Usage Appropriate?">
-                <a href="when_is_ai_appropriate.html">When is AI Usage Appropriate?</a>
+                <img src="when_ai_is_appropriate.jpg" alt="When is AI Usage Appropriate?">
+                <a href="when_ai_is_appropriate.html">When is AI Usage Appropriate?</a>
             </div>
             <div class="article-link">
                 <img src="benefits_of_ai.jpg" alt="Benefits of AI Usage">
@@ -161,9 +183,13 @@
         <!-- Continue with more article content ... -->
     </div>
 
-    <div class="footer">
-        <p>&copy; 2023 University of Michigan News</p>
+    <footer class="sticky-footer">
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="how_this_was_made.html">How this Website was Made</a>
     </div>
+</footer>
 
     <!-- Bootstrap JS -->
     <!-- ... -->
